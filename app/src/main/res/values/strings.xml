@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Wearable</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_phonenumber">This phone number is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="phone_number">Phone Number</string>
+    <string name="select_paired">Select Paired Device</string>
+    <string name="title_activity_bluetooth">BluetoothActivity</string>
+    <string name="title_activity_register">Register</string>
+    <string name="user_phone_number">User Phone Number</string>
+    <string name ="user_name">Name</string>
+    <string name="emergency_phone_number">Emergency Contact Number</string>
+    <string name="register">Register</string>
+    <string name="register_link">Register Now</string>
+    <string name="ticker_text">Communication link established</string>
+    <string name="notification_title">Connection Status</string>
+    <string name="notification_message">Device communication established.</string>
+</resources>
