@@ -20,17 +20,18 @@
         android:id="@+id/device"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp" />
+        android:layout_marginTop="96dp"
+        android:textSize="30dp" />
 
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recieved Text"
         android:id="@+id/receiveText"
         android:layout_below="@+id/device"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
-
+        android:layout_marginTop="50dp" />-->
+<!--
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,44 +42,56 @@
         android:layout_marginTop="100dp"
 
         android:maxLines="1"
-        android:singleLine="true"/>
+        android:singleLine="true"/>-->
 
 
 
-    <Button
+ <!--   <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send"
         android:id="@+id/buttonSend"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:onClick="onClickBtn"/>
+        android:onClick="onClickBtn"/>-->
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sendLeft"
-        android:layout_marginTop="55dp"
         android:src="@drawable/ic_keyboard_arrow_left_white_36dp"
-        android:layout_below="@+id/buttonSend"
-        android:layout_toStartOf="@+id/buttonSend"
-        android:onClick="onClickBtn" />
+        android:onClick="onClickBtn"
+        android:layout_alignTop="@+id/sendDown"
+        android:layout_toStartOf="@+id/sendDown" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sendRight"
         android:src="@drawable/ic_keyboard_arrow_right_white_36dp"
-        android:layout_alignTop="@+id/sendDown"
-        android:layout_toEndOf="@+id/sendDown"
-        android:onClick="onClickBtn"/>
+        android:onClick="onClickBtn"
+        android:layout_marginBottom="159dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/sendDown" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sendDown"
         android:src="@drawable/ic_keyboard_arrow_down_white_36dp"
-        android:layout_alignTop="@+id/sendLeft"
-        android:layout_toEndOf="@+id/sendLeft"
-        android:onClick="onClickBtn"/>
+        android:onClick="onClickBtn"
+        android:layout_alignTop="@+id/sendRight"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No device selected"
+        android:id="@+id/deviceName"
+        android:layout_below="@+id/device"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:onClick = "onClickBtn"
+        android:textIsSelectable="true" />
 </RelativeLayout>
